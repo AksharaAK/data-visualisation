@@ -20,11 +20,10 @@ Consider a system that records every instance of a job seeker applying for a job
 4. Temporal Trends Analysis: Computed and visualized moving averages of total daily event values to uncover and present temporal trends. These line plots revealed fluctuations and patterns in event values over time.
 
 ### Libraries Used
-- Numpy
-- Pandas
-- Seaborn
-- Matplotlib
-- Geopandas
+- Numpy: Employed for numerical computations, including moving average calculations and aggregating event values.
+- Pandas: Utilized for data manipulation, enrichment, and exploration. It facilitated the creation of data structures essential for analysis.
+- Seaborn: Used for data visualization, aiding in the creation of visually appealing and informative charts.
+- Matplotlib: A foundational library for data visualization, employed to generate various types of charts and graphs.
+- Geopandas: Utilized for working with geographical data, enabling the creation of geographic visualizations.
 
 This project allowed me to delve into the analysis of real-world job event data, enriching it with state information and generating insightful visualisations. By examining event distributions, total values, and temporal trends, I gained valuable insights into the patterns and dynamics of job application activities across different US states.
-
