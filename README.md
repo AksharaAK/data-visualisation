@@ -14,16 +14,16 @@ Consider a system that records every instance of a job seeker applying for a job
 - geo: Geographic coordinates (longitude and latitude)
 
 ### Analyses performed
-1. State Data Enrichment: Utilizing the State API endpoint (now expired), I added US state information to each event based on the provided latitude and longitude coordinates. This enriched dataset job_seeker-state.csv served as the foundation for subsequent analyses.
-2. Distribution of Application Events across States: I created visualizations, including bar charts and maps, to showcase the distribution of events across different states.  These visualizations provided immediate insights into the geographical patterns of job application activities.
-3. Sum Value of Application Events across States: Created visualizations showcasing the cumulative value of application events within each state. These visualizations effectively communicated the economic impact of job application activities across different regions
-4. Temporal Trends Analysis: Computed and visualized moving averages of total daily event values to uncover and present temporal trends. These line plots revealed fluctuations and patterns in event values over time.
+1. **State Data Enrichment**: Utilizing the State API endpoint (now expired), I added US state information to each event based on the provided latitude and longitude coordinates. This enriched dataset job_seeker-state.csv served as the foundation for subsequent analyses.
+2. **Distribution of Application Events across States**: I created visualizations, including bar charts and maps, to showcase the distribution of events across different states.  These visualizations provided immediate insights into the geographical patterns of job application activities.
+3. **Sum Value of Application Events across States**: Created visualizations showcasing the cumulative value of application events within each state. These visualizations effectively communicated the economic impact of job application activities across different regions
+4. **Temporal Trends Analysis**: Computed and visualized moving averages of total daily event values to uncover and present temporal trends. These line plots revealed fluctuations and patterns in event values over time.
 
 ### Libraries Used
-- Numpy: Employed for numerical computations, including moving average calculations and aggregating event values.
-- Pandas: Utilized for data manipulation, enrichment, and exploration. It facilitated the creation of data structures essential for analysis.
-- Seaborn: Used for data visualization, aiding in the creation of visually appealing and informative charts.
-- Matplotlib: A foundational library for data visualization, employed to generate various types of charts and graphs.
-- Geopandas: Utilized for working with geographical data, enabling the creation of geographic visualizations.
+- **Numpy**: Employed for numerical computations, including moving average calculations and aggregating event values.
+- **Pandas**: Utilized for data manipulation, enrichment, and exploration. It facilitated the creation of data structures essential for analysis.
+- **Seaborn**: Used for data visualization, aiding in the creation of visually appealing and informative charts.
+- **Matplotlib**: A foundational library for data visualization, employed to generate various types of charts and graphs.
+- **Geopandas**: Utilized for working with geographical data, enabling the creation of geographic visualizations.
 
 This project allowed me to delve into the analysis of real-world job event data, enriching it with state information and generating insightful visualisations. By examining event distributions, total values, and temporal trends, I gained valuable insights into the patterns and dynamics of job application activities across different US states.
