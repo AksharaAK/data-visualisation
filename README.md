@@ -24,7 +24,7 @@ https://us-state-api.herokuapp.com/?lat=36.7&lon=-119.67
 
 If you provide an accurate latitude & longitude the API will return the following response:
 
-'''
+```
 {
   "state": {
     "name": "California",
@@ -32,7 +32,7 @@ If you provide an accurate latitude & longitude the API will return the followin
     "postal": "CA"
   }
 }
-'''
+```
 
 ### Libraries Used
 - **Numpy**: Employed for numerical computations, including moving average calculations and aggregating event values.
