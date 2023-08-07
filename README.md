@@ -14,10 +14,25 @@ Consider a system that records every instance of a job seeker applying for a job
 - geo: Geographic coordinates (longitude and latitude)
 
 ### Analyses performed
-1. **State Data Enrichment**: Utilizing the State API endpoint (now expired), I added US state information to each event based on the provided latitude and longitude coordinates. This enriched dataset job_seeker-state.csv served as the foundation for subsequent analyses.
+1. **State Data Enrichment**: Utilizing the State API endpoint below (now expired), I added US state information to each event based on the provided latitude and longitude coordinates in `DA_TEST.ipynb`. This enriched dataset `job_seeker-state.csv` served as the foundation for subsequent analyses.
 2. **Distribution of Application Events across States**: I created visualizations, including bar charts and maps, to showcase the distribution of events across different states.  These visualizations provided immediate insights into the geographical patterns of job application activities.
 3. **Sum Value of Application Events across States**: Created visualizations showcasing the cumulative value of application events within each state. These visualizations effectively communicated the economic impact of job application activities across different regions
-4. **Temporal Trends Analysis**: Computed and visualized moving averages of total daily event values to uncover and present temporal trends. These line plots revealed fluctuations and patterns in event values over time.
+4. **Temporal Trends Analysis**: Computed and visualized moving averages of total daily event values to uncover and present temporal trends. These line plots revealed fluctuations and patterns in event values over time. The above visualisations are performed in `DA_VIZ.ipynb`. 
+
+### State API
+https://us-state-api.herokuapp.com/?lat=36.7&lon=-119.67
+
+If you provide an accurate latitude & longitude the API will return the following response:
+
+'''
+{
+  "state": {
+    "name": "California",
+    "slug": "california",
+    "postal": "CA"
+  }
+}
+'''
 
 ### Libraries Used
 - **Numpy**: Employed for numerical computations, including moving average calculations and aggregating event values.
